@@ -23,7 +23,7 @@ module.exports = app => {
 
     app.use((req, res, next) => {
         if (req.user) {
-            res.locals.currentUser = req.user;    //създаваме res.locals променлива (currentUser), която идва от express и е достъпна навсякъде, можем да си я извикваме полсле през handlebars във темплейта.
+            res.locals.currentUser = req.user;    
         }
         next();
     });

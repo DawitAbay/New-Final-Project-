@@ -7,8 +7,6 @@ module.exports = {
     registerGet: (req, res) => {
         res.render('users/register');
     },
-
-    //Registration POST--------------------------------------------------------------------
     registerPost: async (req, res) => {
         const reqUser = req.body;
         const salt = encryption.generateSalt();
@@ -45,7 +43,6 @@ module.exports = {
         res.render('users/login');
     },
 
-    //Login POST--------------------------------------------------------------
     loginPost: async (req, res) => {
         const reqUser = req.body;
         try {
@@ -58,7 +55,7 @@ module.exports = {
                 errorHandler('Invalid user data');
                 return;
             }
-            req.logIn(user, (err, user) => {     //req.logIn идава от passport
+            req.logIn(user, (err, user) => {    
                 if (err) {
                     errorHandler(err);
                 } else {
