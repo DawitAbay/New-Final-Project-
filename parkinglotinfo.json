@@ -1,0 +1,16 @@
+{"_id":{"$numberInt":"1"},"available":true,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"2"},"available":true,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"3"},"available":true,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"4"},"available":false,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"5"},"available":true,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"6"},"available":false,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"7"},"available":false,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"8"},"available":true,"price":{"$numberInt":"25"}}
+{"_id":{"$numberInt":"9"},"available":false,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"10"},"available":false,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"11"},"available":true,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"12"},"available":true,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"13"},"available":false,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"14"},"available":false,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"15"},"available":false,"price":{"$numberInt":"50"}}
+{"_id":{"$numberInt":"16"},"available":true,"price":{"$numberInt":"50"}}
