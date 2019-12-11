@@ -1,5 +1,3 @@
-
-
 <h2 class="home-title">Choose a car and rent it</h2>
 
 
@@ -17,7 +15,7 @@
         <li class="page-item"><a class="page-link" href="?page={{pageObj.prevPage}}">Prev page</a></li>
         <li class="page-item" ><a class="page-link" href="?page={{pageObj.nextPage}}">Next page</a></li>
       </ul>
-      
+
     {{#each allCar}}
     <div class="car-section row">
         <img class="home-page-imgages rounded float-left"src="{{this.image}}">
@@ -36,7 +34,7 @@
         <div class="col-md-2 col-12">
             <a href="/carDetails/{{this._id}}"><b>TAKE IT THIS CAR</b></a>
         </div>
-        
+
     </div>
     {{/each}}
 
@@ -44,7 +42,3 @@
         <li class="page-item"><a class="page-link" href="?page={{pageObj.prevPage}}">Prev page</a></li>
         <li class="page-item" ><a class="page-link" href="?page={{pageObj.nextPage}}">Next page</a></li>
       </ul>
-
-
-
-

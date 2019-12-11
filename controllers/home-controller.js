@@ -41,7 +41,8 @@ module.exports = {
     about: (req, res) => {
         res.render('home/about');
     },
-    contacts: (req, res) => {
-        res.render('home/contact');
-    }
+    parking: (req, res) => {
+        res.render('home/parking');
+    },
+
 };

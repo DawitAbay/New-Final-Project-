@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Parking Lot</title>
+</head>
+<body>
+<style>
+.containerparking{
+    /* max-width: 700px; */
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: grid;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* padding-top: 75px; */
+}
+.containerparking .col-6
+{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    /* position: relative; */
+    margin-bottom: 50px;
+    /* padding: 35px; */
+}
+.containerparking .col-6 .col
+{
+    border-left: 2px solid red;
+    padding: 15px;
+    position: relative;
+    min-height: 45px;
+    height: 100%;
+    max-height: 45px;
+    width: 100%;
+    text-align: center;
+}
+.containerparking .col-6 .grids   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+.containerparking .col-6 .grids .col:after
+{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: red;
+    position: absolute;
+    /* display: block; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.containerparking .col-6 .grids:last-child .col:after
+{
+    content: "";
+    display: none;
+}
+.containerparking .col-6 .col:last-child{
+    border-right: 2px solid red;
+}
+
+</style>
+<div class="containerparking">
+
+<div class="col-6">
+<div class="grids" style="">
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+<div class="grids" style="">
+   <div class="col">
+
+   </div>
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+</div>
+
+<div class="col-6">
+<div class="grids" style="">
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+<div class="grids" style="">
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+</div>
+
+<div class="col-6">
+<div class="grids" style="">
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+<div class="grids" style="">
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+</div>
+
+<div class="col-6">
+<div class="grids" style="">
+   <div class="col">
+       <p>V</p>
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+<div class="grids" style="">
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+   <div class="col">
+
+   </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

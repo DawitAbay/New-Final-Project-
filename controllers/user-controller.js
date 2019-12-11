@@ -55,7 +55,7 @@ module.exports = {
                 errorHandler('Invalid user data');
                 return;
             }
-            req.logIn(user, (err, user) => {    
+            req.logIn(user, (err, user) => {    0
                 if (err) {
                     errorHandler(err);
                 } else {

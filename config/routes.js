@@ -5,11 +5,12 @@ module.exports = app => {
     app.get('/', controllers.home.index);
     app.get('/about', restrictedPages.hasRole('Admin'), controllers.home.about);
     app.get('/register', controllers.user.registerGet);
-    app.get('/contact', controllers.home.contacts)
+    app.get('/parking', controllers.home.parking)
     app.post('/register', controllers.user.registerPost);
     app.post('/logout', controllers.user.logout);
     app.get('/login', controllers.user.loginGet);
     app.post('/login', controllers.user.loginPost);
+
 
     //Admin routes
     app.get('/addCar', restrictedPages.hasRole('Admin'), controllers.admin.addCarGet)
