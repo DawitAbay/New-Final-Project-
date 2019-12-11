@@ -1,0 +1,22 @@
+<script>
+    const ccnum = document.getElementById('ccnum');
+    ccnum.addEventListener('keyup', function (event) {
+        let cardnum = document.getElementById("ccnum").value;
+        if (cardnum.length >= 1) {
+            let firstDigit = cardnum.substr(0, 1);
+            if (firstDigit === "4") {
+                document.getElementById('cardType').innerHTML = 'Visa';
+            }
+        }
+                if (cardnum.length >= 2) {
+                    let twoDigits = cardnum.substr(0, 2);
+                    if (twoDigits === "34" || twoDigits === "37") {
+                        document.getElementById('cardType').innerHTML = 'American Express';
+                    }
+                    if (twoDigits === "51" || twoDigits === "52" || twoDigits === "53" || twoDigits === "54" || twoDigits === "55") {
+                        document.getElementById('cardType').innerHTML = 'MasterCard';
+                    }
+                }
+                if (cardnum.length === 0 ) document.getElementById('cardType').innerHTML = '';
+    });
+</script>
